@@ -1,0 +1,168 @@
+@media only screen and (max-width: 992px) {
+  header {
+    .burger-menu {
+      display: block;
+      color: white;
+      font-size: 20px;
+    }
+    .nav-center {
+      display: none;
+    }
+  }
+
+  .welcome {
+    .container {
+      padding: 0 15rem;
+      .all-welocem-content-h1 {
+        font-size: 30px;
+        .all-welocem-content-h1-span {
+          &::after {
+            bottom: 0;
+          }
+        }
+      }
+      .all-welocem-content-p {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .digital{
+    .container{
+      .digital-all{
+        flex-direction: column;
+        gap: 40px;
+        .digital-left-one{
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  header {
+    .container {
+      padding: 0 2rem;
+    }
+    .burger-menu {
+      font-size: 15px;
+    }
+    .nav-left-logo {
+      img {
+        width: 150px;
+      }
+    }
+    .nav-right {
+      a {
+        font-size: 12px;
+        padding: 8px;
+      }
+    }
+  }
+
+  .welcome {
+    .container {
+      padding: 0 7rem;
+    }
+  }
+
+  .digital{
+    .container{
+      .digital-all{
+       .digital-right{
+        .all-digital-right{
+          .all-digital-right-h1{
+            font-size: 25px;
+          }
+          .all-digital-right-p{
+            font-size: 13px;
+          }
+        }
+       }
+      }
+    }
+  }
+}
+
+ 
+
+@media only screen and (max-width: 576px) {
+  header {
+    .container {
+      padding: 0 1rem;
+    }
+    .burger-menu {
+      font-size: 12px;
+    }
+    .nav-left-logo {
+      img {
+        width: 120px;
+      }
+    }
+    .nav-right {
+      a {
+        font-size: 10px;
+        padding: 6px;
+      }
+    }
+  }
+
+  .welcome {
+    .container {
+      padding: 0 1rem;
+      .all-welocem-content {
+        .all-welocem-content-h1 {
+          font-size: 25px;
+          .all-welocem-content-h1-span {
+            &::after {
+              bottom: 0;
+            }
+          }
+        }
+        .all-welocem-content-p {
+          font-size: 8px;
+        }
+        .all-welocem-content-btns-left {
+          padding: 10px 50px;
+        }
+        .all-welocem-content-btns-right {
+          padding: 10px 25px;
+        }
+      }
+    }
+  }
+
+  .digital{
+    .container{
+      padding: 0 1rem;
+      .digital-all{
+       .digital-right{
+        .all-digital-right{
+          .hr-span {
+            hr {
+              width: 120px;
+            }
+            span {
+              font-size: 14px;
+            }
+          }
+          .all-digital-right-h1{
+            font-size: 20px;
+          }
+          .all-digital-right-p{
+            font-size: 10px;
+          }
+        }
+       }
+       .digital-left{
+        .digital-left-one img{
+          width: 100%;
+        }
+       }
+      }
+    }
+  }
+
+}
+
+

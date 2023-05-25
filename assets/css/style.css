@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+:root {
+  --main-font: "Poppins", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #343434;
+  padding: 10px 0;
+}
+header .burger-menu {
+  display: none;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container {
+  padding: 0 4rem;
+}
+header .nav-center {
+  flex-grow: 0.2;
+}
+header .nav-center ul {
+  display: flex;
+  gap: 20px;
+}
+header .nav-center li {
+  list-style: none;
+}
+header .nav-center a {
+  text-decoration: none;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  position: relative;
+}
+header .nav-center a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  color: red;
+  background-color: red;
+  width: 0;
+  height: 2px;
+  transition: all 0.3s;
+}
+header .nav-center a:hover::after {
+  width: 100%;
+}
+header .nav-right a {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #ff3839;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+header .nav-right a:hover {
+  background-color: white;
+  color: black;
+}
+
+.welcome {
+  background-position: center;
+  background-image: linear-gradient(black, black), url("../img/welocem-bg-img.png");
+  background-blend-mode: saturation;
+}
+.welcome .container {
+  padding: 0 17rem;
+}
+.welcome .all-welocem-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 122.2px 0;
+}
+.welcome .all-welocem-content .all-welocem-content-span {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.welcome .all-welocem-content .all-welocem-content-span .all-welocem-content-span-red {
+  color: red;
+}
+.welcome .all-welocem-content .all-welocem-content-h1 {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 128.5%;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.welcome .all-welocem-content .all-welocem-content-h1 .all-welocem-content-h1-span {
+  position: relative;
+}
+.welcome .all-welocem-content .all-welocem-content-h1 .all-welocem-content-h1-span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 10px;
+  background-color: red;
+}
+.welcome .all-welocem-content .all-welocem-content-p {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 15px;
+  margin-bottom: 35px;
+}
+.welcome .all-welocem-content .all-welocem-content-btns {
+  display: flex;
+  gap: 10px;
+}
+.welcome .all-welocem-content .all-welocem-content-btns .all-welocem-content-btns-left {
+  padding: 10px 41px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #ff3839;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+.welcome .all-welocem-content .all-welocem-content-btns .all-welocem-content-btns-left:hover {
+  background-color: white;
+  color: black;
+}
+.welcome .all-welocem-content .all-welocem-content-btns .all-welocem-content-btns-right {
+  padding: 10px 20px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+.welcome .all-welocem-content .all-welocem-content-btns .all-welocem-content-btns-right:hover {
+  background-color: black;
+  color: white;
+}
+
+.digital {
+  padding: 4rem 0;
+}
+.digital .container {
+  padding: 0 4rem;
+}
+.digital .container .digital-all {
+  display: flex;
+  justify-content: space-between;
+}
+.digital .container .digital-all .digital-right {
+  padding: 0 40px;
+}
+.digital .container .digital-all .digital-right .all-digital-right .hr-span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.digital .container .digital-all .digital-right .all-digital-right .hr-span hr {
+  color: #d8d8d8;
+  width: 143px;
+  height: 0;
+}
+.digital .container .digital-all .digital-right .all-digital-right .hr-span span {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 155%;
+  text-align: justify;
+  letter-spacing: 0.03em;
+  color: #ff3839;
+}
+.digital .container .digital-all .digital-right .all-digital-right .hr-span span span {
+  color: #696969;
+}
+.digital .container .digital-all .digital-right .all-digital-right .all-digital-right-h1 {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125.5%;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-bottom: 25px;
+}
+.digital .container .digital-all .digital-right .all-digital-right .all-digital-right-h1 span {
+  color: #ff3839;
+}
+.digital .container .digital-all .digital-right .all-digital-right .all-digital-right-p {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 155%;
+  text-align: justify;
+  letter-spacing: 0.03em;
+  color: #696969;
+  margin-bottom: 55px;
+}
+.digital .container .digital-all .digital-right .all-digital-right .all-digital-right-btns {
+  padding: 10px 41px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #ff3839;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+.digital .container .digital-all .digital-right .all-digital-right .all-digital-right-btns:hover {
+  background-color: #333;
+  color: white;
+}
+
+@media only screen and (max-width: 992px) {
+  header .burger-menu {
+    display: block;
+    color: white;
+    font-size: 20px;
+  }
+  header .nav-center {
+    display: none;
+  }
+  .welcome .container {
+    padding: 0 15rem;
+  }
+  .welcome .container .all-welocem-content-h1 {
+    font-size: 30px;
+  }
+  .welcome .container .all-welocem-content-h1 .all-welocem-content-h1-span::after {
+    bottom: 0;
+  }
+  .welcome .container .all-welocem-content-p {
+    font-size: 10px;
+  }
+  .digital .container .digital-all {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .digital .container .digital-all .digital-left-one {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header .container {
+    padding: 0 2rem;
+  }
+  header .burger-menu {
+    font-size: 15px;
+  }
+  header .nav-left-logo img {
+    width: 150px;
+  }
+  header .nav-right a {
+    font-size: 12px;
+    padding: 8px;
+  }
+  .welcome .container {
+    padding: 0 7rem;
+  }
+  .digital .container .digital-all .digital-right .all-digital-right .all-digital-right-h1 {
+    font-size: 25px;
+  }
+  .digital .container .digital-all .digital-right .all-digital-right .all-digital-right-p {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  header .container {
+    padding: 0 1rem;
+  }
+  header .burger-menu {
+    font-size: 12px;
+  }
+  header .nav-left-logo img {
+    width: 120px;
+  }
+  header .nav-right a {
+    font-size: 10px;
+    padding: 6px;
+  }
+  .welcome .container {
+    padding: 0 1rem;
+  }
+  .welcome .container .all-welocem-content .all-welocem-content-h1 {
+    font-size: 25px;
+  }
+  .welcome .container .all-welocem-content .all-welocem-content-h1 .all-welocem-content-h1-span::after {
+    bottom: 0;
+  }
+  .welcome .container .all-welocem-content .all-welocem-content-p {
+    font-size: 8px;
+  }
+  .welcome .container .all-welocem-content .all-welocem-content-btns-left {
+    padding: 10px 50px;
+  }
+  .welcome .container .all-welocem-content .all-welocem-content-btns-right {
+    padding: 10px 25px;
+  }
+  .digital .container {
+    padding: 0 1rem;
+  }
+  .digital .container .digital-all .digital-right .all-digital-right .hr-span hr {
+    width: 120px;
+  }
+  .digital .container .digital-all .digital-right .all-digital-right .hr-span span {
+    font-size: 14px;
+  }
+  .digital .container .digital-all .digital-right .all-digital-right .all-digital-right-h1 {
+    font-size: 20px;
+  }
+  .digital .container .digital-all .digital-right .all-digital-right .all-digital-right-p {
+    font-size: 10px;
+  }
+  .digital .container .digital-all .digital-left .digital-left-one img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
