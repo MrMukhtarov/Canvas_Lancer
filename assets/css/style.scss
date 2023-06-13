@@ -7,9 +7,60 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+
+
+
+.open {
+  animation-name: open;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+@keyframes open{
+  from{
+    left: -100%;
+  }
+  to{
+    left: 0;
+  }
+}
+
+.close {
+  animation-name: close;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+@keyframes close{
+  from{
+    left: 0;
+  }
+  to{
+    left: -100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.block {
+  display: block !important;
+}
+.none {
+  display: none !important;
+}
 header {
   background-color: #343434;
   padding: 10px 0;
+  position: relative;
   .burger-menu {
     display: none;
   }
@@ -17,6 +68,68 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .burger-close {
+      position: absolute;
+      z-index: 2;
+      font-size: 20px;
+      left: 30px;
+      top: 15px;
+      animation-name: mobile-menu-close;
+      animation-fill-mode: forwards;
+      animation-duration: 1s;
+    }
+
+    .burger-menu-div {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: white;
+      height: 100vh;
+      width: 100%;
+      z-index: 1;
+      animation-name: mobile-menu;
+      animation-fill-mode: forwards;
+      animation-duration: 1s;
+      transition: all 0.5s ease;
+
+      // @keyframes mobile-menu{
+      //   from{
+      //     left: -100%;
+      //   }
+      //   to{
+      //     left: 0;
+      //   }
+      // }
+
+      ul {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate((-50%, -50%));
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding-left: 0 !important;
+        li {
+          list-style: none;
+          text-align: center;
+          a {
+            font-size: 30px;
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+            text-transform: uppercase;
+            transition: all 0.3s;
+            font-family: var(--main-font);
+            &:hover {
+              color: red;
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+    }
   }
   .container-nav {
     padding: 0 4rem;
